@@ -7,11 +7,9 @@ int main(){
     cin>>k;
     int c[n];
 
-    for (int i=0; i<n; i++){
+    for (int i=0; i< n; i++){
         cin>>c[i];
-    }
-    for (int i=0; i<n; i++){
-        if (c[i]>=c[(k-1)] && c[i]>0){
+        if (c[i]>=c[k-1] && c[i]>0){
             p++;
         }
     }
