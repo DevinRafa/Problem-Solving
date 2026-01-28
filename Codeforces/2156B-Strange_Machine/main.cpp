@@ -1,6 +1,5 @@
 #include <iostream>
 
-/*
 long long int machine(int value, long long int &clockwise_f, int total_machine, char arr[]){
     int iteration {0};
     // body algorithm
@@ -31,7 +30,6 @@ long long int machine(int value, long long int &clockwise_f, int total_machine, 
 
     return clockwise_temp; 
 }
-*/
 
 void Input_type_machine(int &total_machine, char *type_machine){
     for (unsigned int i {}; i<total_machine; i++){
@@ -70,12 +68,13 @@ int main(){
         */
        Input_value(a, q);
     }
-    /*
+
+    // input for using using machine based by total value (q)
     for (size_t a_loop {}; a_loop<q; a_loop++){
         long long int result = machine(a[a_loop], clockwise, n, s);
         std::cout << result << std::endl;
     }
-    */
+    
 
 
     return 0;
