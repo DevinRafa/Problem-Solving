@@ -33,6 +33,19 @@ long long int machine(int value, long long int &clockwise_f, int total_machine, 
 }
 */
 
+void Input_type_machine(int &total_machine, char *type_machine){
+    for (unsigned int i {}; i<total_machine; i++){
+        std::cin >> type_machine[i];
+    }
+}
+
+void Input_value(long int *the_value, int &total_group_value){
+    for (unsigned int i {}; i<total_group_value; i++){
+        std::cin >> the_value[i];
+    }
+}
+
+
 int main(){
     int n, q, t;
     long int a[q];
@@ -43,12 +56,19 @@ int main(){
     std::cin >> t;
     for (size_t i {0}; i<t; i++){
         std::cin >> n >> q;
+        /*
         for (size_t j {0}; j<n; j++){
             std::cin >> s[j];
         }
+        */
+        Input_type_machine(n, s);
+
+        /*
         for (size_t k {0}; k<q; k++){
             std::cin >> a[k];
         }   
+        */
+       Input_value(a, q);
     }
     /*
     for (size_t a_loop {}; a_loop<q; a_loop++){
